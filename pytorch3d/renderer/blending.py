@@ -116,7 +116,7 @@ def sigmoid_alpha_blend(colors, fragments, blend_params) -> torch.Tensor:
 
 
 def softmax_rgb_blend(
-    colors, fragments, blend_params, znear: float = 1.0, zfar: float = 100
+    colors, fragments, blend_params, znear=1.0, zfar=100
 ) -> torch.Tensor:
     """
     RGB and alpha channel blending to return an RGBA image based on the method
